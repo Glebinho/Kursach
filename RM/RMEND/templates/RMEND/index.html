@@ -1,0 +1,37 @@
+{% extends 'RMEND/base.html' %}
+{% load static %}
+
+{% block title %} Real Madrid CF {% endblock %}
+{%block content %}
+     <div class="news-1">
+          <a href="{% url 'RealMadrid|news|MaryChristmast' %}" style="text-decoration:none;">
+          <h1 class="text-1">Florentino Pérez: “Merry Christmas and
+               <br>may 2024 bring health, peace, work,
+               <br>happiness and solidarity for all of us"</h1>
+     </a>
+          </div>
+<div class="mini-news">
+     <div class="news-2">
+          <a href="{% url 'RealMadrid|news|training' %}" style="text-decoration:none;">
+              <img src="{% static 'RMEND/img/news-2.png' %}" class="img-news">
+              <h2 class="text-news">Real Madrid return to training tomorrow</h2>
+     </a>
+
+     </div>
+<div class="news-3">
+          <a href="{% url 'RealMadrid|news|transfer' %}" style="text-decoration:none;">
+              <img src="{% static 'RMEND/img/news-3.png' %}" class="img-news">
+              <h2 class="text-news">The president meets Endrick at Real Madrid City</h2>
+     </a>
+
+     </div>
+<div class="news-4">
+          <a href="{% url 'RealMadrid|news|bestDefender' %}" style="text-decoration:none;">
+              <img src="{% static 'RMEND/img/news-4.png' %}" class="img-news">
+              <h2 class="text-news">LaLiga's best defence</h2>
+     </a>
+
+     </div>
+    </div>
+
+{% endblock %}
